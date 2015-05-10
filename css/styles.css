@@ -6,15 +6,19 @@ body {
 
 header {
 	margin: 1em 0;
-	text-align: center;
 	color: #378CFF;
-	font-size: 64pt;
+	text-align: center;
+	line-height: 1.2em;
 	font-family: 'Raleway', sans-serif;
 }
 
 #countdown {
-	margin: 0 auto;
+	margin: 0 auto 3em auto;
 	text-align: center;
+}
+
+.countdown-container {
+	display: inline-block;
 }
 
 .unit {
@@ -29,19 +33,29 @@ header {
 
 .box {
 	padding: 0.15em;
-	border: 2px solid #FFDC50;
+	border: 3px solid #FFDC50;
 	border-radius: 10px;
 	display: inline-block;
 	
 	color: #FFDC50;
-	font-size: 72pt;
-	line-height: 0.9em;
 }
 
 .scale {
 	padding-top: 3px;
 	color: #378CFF;
-	font-size: 14pt;
+}
+
+#test-area {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.b {
+	background: darkorchid;
+	color: white;
+	padding: 1em;
+	text-align: center;
+	border-radius: 5px;
 }
 
 /*
