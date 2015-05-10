@@ -8,7 +8,7 @@ header {
 	margin: 1em 0;
 	text-align: center;
 	color: #378CFF;
-	font-size: 48pt;
+	font-size: 64pt;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -18,7 +18,7 @@ header {
 }
 
 .unit {
-	margin-left: 0.5em;
+	margin-left: 1em;
 	display: inline-block;
 	font-family: 'Source Sans Pro', sans-serif;
 }
@@ -34,7 +34,7 @@ header {
 	display: inline-block;
 	
 	color: #FFDC50;
-	font-size: 48pt;
+	font-size: 72pt;
 	line-height: 0.9em;
 }
 
