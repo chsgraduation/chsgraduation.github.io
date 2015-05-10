@@ -1,0 +1,50 @@
+body {
+	background: url(imgs/background.png);
+	font-size: 16px;
+	color: white;
+}
+
+header {
+	margin: 1em 0;
+	text-align: center;
+	color: #378CFF;
+	font-size: 48pt;
+	font-family: 'Raleway', sans-serif;
+}
+
+#countdown {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.unit {
+	margin-left: 0.5em;
+	display: inline-block;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.unit:first-child {
+	margin-left: 0;
+}
+
+.box {
+	padding: 0.15em;
+	border: 2px solid #FFDC50;
+	border-radius: 10px;
+	display: inline-block;
+	
+	color: #FFDC50;
+	font-size: 48pt;
+	line-height: 0.9em;
+}
+
+.scale {
+	padding-top: 3px;
+	color: #378CFF;
+	font-size: 14pt;
+}
+
+/*
+blue: #378CFF
+gold: #FFDC50
+*/

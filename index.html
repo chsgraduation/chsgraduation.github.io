@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>CHS Graduation Countdown</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="js/jquery.jcountdown.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$("#countdown").countdown({
+				date: new Date(2015, 6-1, 11, 18, 45, 0, 0),
+				dayText: '',
+				daySingularText: '',
+				hourText: '',
+				hourSingularText: '',
+				minText: '',
+				minSingularText: '',
+				secText: '',
+				secSingularText: '',
+				leadingZero: true,
+				template:
+				'<div class="unit">' +
+					'<div class="box">%d</div>' +
+					'<div class="scale">Days</div>' +
+				'</div>' +
+				'<div class="unit">' +
+					'<div class="box">%h</div>' +
+					'<div class="scale">Hours</div>' +
+				'</div>' +
+				'<div class="unit">' +
+					'<div class="box">%i</div>' +
+					'<div class="scale">Minutes</div>' +
+				'</div>' +
+				'<div class="unit">' +
+					'<div class="box">%s</div>' +
+					'<div class="scale">Seconds</div>' +
+				'</div>'
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>Prepare to Graduate in:</header>
+	
+	<!-- <section id="timer">
+		<div class="unit">
+			<div class="box">36</div>
+			<div class="scale">Days</div>
+		</div>
+		<div class="unit">
+			<div class="box">11</div>
+			<div class="scale">Hours</div>
+		</div>
+		<div class="unit">
+			<div class="box">52</div>
+			<div class="scale">Minutes</div>
+		</div>
+		<div class="unit">
+			<div class="box">42</div>
+			<div class="scale">Seconds</div>
+		</div>
+	</section> -->
+	
+	<section id="countdown"></section>
+</body>
+</html>
