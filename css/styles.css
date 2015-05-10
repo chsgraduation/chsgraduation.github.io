@@ -5,7 +5,7 @@ body {
 }
 
 header {
-	margin: 1em 0;
+	margin: 1em auto;
 	color: #378CFF;
 	text-align: center;
 	line-height: 1.2em;
@@ -38,6 +38,7 @@ header {
 	display: inline-block;
 	
 	color: #FFDC50;
+	line-height: 0.9em;
 }
 
 .scale {

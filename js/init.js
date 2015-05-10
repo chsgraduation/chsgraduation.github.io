@@ -29,6 +29,10 @@ function initSkel() {
 			small: {
 				media: '(max-width: 560px)',
 				href: 'css/styles-small.css'
+			},
+			xsmall: {
+				media: '(max-width: 380px)',
+				href: 'css/styles-xsmall.css'
 			}
 		}
 	});
