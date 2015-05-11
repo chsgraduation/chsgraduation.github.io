@@ -1,18 +1,10 @@
 /*
- * Executed first. Initializes Skel and jCountdown.
+ * Executed first. Initializes Skel, jCountdown, and the footer onClick listener.
  */
 $(document).ready(function() {
 	initSkel();
 	initCountdown();
-	
-	$("footer").click(function() {
-		var first = $("#made-by").is(":visible") ? $("#made-by") : $("#email");
-		var second = $("#made-by").is(":visible") ? $("#email") : $("#made-by");
-		
-		first.fadeToggle(200, function() {
-			second.fadeToggle(200);
-		});
-	});
+	initFooterListener();
 });
 
 /*
@@ -90,5 +82,25 @@ function initCountdown() {
 				'</div>' +
 			'</div>' +
 		'</div>'
+	});
+}
+
+/*
+ * Toggles between showing 'Made by Adam Peled' and my email address when the footer is clicked.
+ */
+function initFooterListener() {
+	$("#email-toggle").click(function() {
+		// If "Made by..." is visible, hide it first then fade the email in.
+		// Otherwise, vice versa.
+		var first = $("#made-by").is(":visible") ? $("#made-by") : $("#email");
+		var second = $("#made-by").is(":visible") ? $("#email") : $("#made-by");
+		
+		// Disable toggling if currently fading
+		if(first.css("opacity") !== "1") return;
+		
+		// Actually fade the elements now
+		first.fadeToggle(200, function() {
+			second.fadeToggle(200);
+		});
 	});
 }

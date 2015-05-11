@@ -48,9 +48,17 @@ header {
 
 footer {
 	margin-bottom: 3em;
-	cursor: pointer;
 	color: #777;
 	text-align: center;
 	font-size: 12pt;
 	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#email-toggle {
+	display: inline-block;
+	cursor: pointer;
+}
+
+#email-toggle:hover {
+	color: #999;
 }
