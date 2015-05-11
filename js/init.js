@@ -4,6 +4,15 @@
 $(document).ready(function() {
 	initSkel();
 	initCountdown();
+	
+	$("footer").click(function() {
+		var first = $("#made-by").is(":visible") ? $("#made-by") : $("#email");
+		var second = $("#made-by").is(":visible") ? $("#email") : $("#made-by");
+		
+		first.fadeToggle(200, function() {
+			second.fadeToggle(200);
+		});
+	});
 });
 
 /*
@@ -42,6 +51,7 @@ function initSkel() {
  * Initializes the countdown timer.
  * Gives it the date to countdown to, removes the default time text (as we use a custom template),
  * enables leading zeros, and provides the template to create the timer.
+ * By default, jCountdown uses the client's time to work out the countdown.
  */
 function initCountdown() {
 	$("#countdown").countdown({

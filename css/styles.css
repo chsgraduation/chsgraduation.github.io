@@ -46,20 +46,10 @@ header {
 	color: #378CFF;
 }
 
-#test-area {
-	width: 500px;
-	margin: 0 auto;
-}
-
-.b {
-	background: darkorchid;
-	color: white;
-	padding: 1em;
+footer {
+	margin-bottom: 3em;
+	color: #777;
 	text-align: center;
-	border-radius: 5px;
+	font-size: 12pt;
+	font-family: 'Source Sans Pro', sans-serif;
 }
-
-/*
-blue: #378CFF
-gold: #FFDC50
-*/
