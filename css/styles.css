@@ -12,6 +12,14 @@ header {
 	font-family: 'Raleway', sans-serif;
 }
 
+.message {
+	margin-bottom: 1em;
+	color: #FFDC50;
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
 #countdown {
 	margin: 0 auto 3em auto;
 	text-align: center;
